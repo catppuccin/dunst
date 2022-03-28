@@ -63,8 +63,6 @@
 
     max_icon_size = 32
 
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-
 
     sticky_history = yes
 
@@ -73,7 +71,7 @@
 
     dmenu = /usr/bin/dmenu -p dunst:
 
-    browser = /usr/bin/sensible-browser
+    browser = /usr/bin/firefox
 
     always_run_script = true
 
