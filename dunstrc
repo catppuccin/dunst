@@ -1,5 +1,7 @@
+[global]
 frame_color = "#96CDFB"
 separator_color= frame
+font = JetBrains Mono Nerd Font 10
 
 [urgency_low]
 background = "#1E1E2E"
