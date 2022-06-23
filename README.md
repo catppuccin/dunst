@@ -15,11 +15,12 @@
 
 ## Usage
 
-1. Copy the contents of `dunstrc` into `$HOME/.config/dunst/dunstrc`.
+1. Copy the content of selected flavour file from `src` folder into `$HOME/.config/dunst/dunstrc`.
 
 ## 💝 Thanks to
 
 - [Sanjay Pavan](https://github.com/WitherCubes)
+- [elkrien](https://github.com/elkrien)
 
 &nbsp;
 
