@@ -1,0 +1,42 @@
+# A Catppuccin RC file for Helix. In beta, specs may change.
+app_name: dunst # name of app
+binary_name: dunst # name of executably
+installation: # Install instructions
+  location:
+    macos: ~/.config/dunst/
+    linux: ~/.config/dunst/
+  flavours: # Specific flavours
+    all:
+      default:
+        - dunstrc
+      additional:
+        no-italics:
+          - dunstrc
+    latte:
+      default: # Default and no-italic variants
+        - dunstrc
+      additional:
+        no-italics:
+          - dunstrc
+    frappe:
+      default:
+        - dunstrc
+      additional:
+        no-italics:
+          - dunstrc
+    macchiato:
+      default:
+        - dunstrc
+      additional:
+        no-italics:
+          - dunstrc
+    mocha:
+      default:
+        - dunstrc
+      additional:
+        no-italics:
+          - dunstrc
+  to: ~/.config/dunst/ # Install location
+  one_flavour: false # Only one flavour?
+  modes: # Additional modes
+    - no-italics
