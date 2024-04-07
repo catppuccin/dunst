@@ -1,0 +1,24 @@
+---
+whiskers:
+  version: 2.0.0
+  matrix:
+    - flavor
+  filename: "themes/{{ flavor.identifier }}.conf"
+---
+{%- set palette = flavor.colors -%}
+[global]
+frame_color = "#{{ palette.blue.hex }}"
+separator_color= frame
+
+[urgency_low]
+background = "#{{ palette.base.hex }}"
+foreground = "#{{ palette.text.hex }}"
+
+[urgency_normal]
+background = "#{{ palette.base.hex }}"
+foreground = "#{{ palette.text.hex }}"
+
+[urgency_critical]
+background = "#{{ palette.base.hex }}"
+foreground = "#{{ palette.text.hex }}"
+frame_color = "#{{ palette.peach.hex }}"

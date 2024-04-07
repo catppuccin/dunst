@@ -15,7 +15,8 @@
 
 ## Usage
 
-1. Copy the content of selected flavour file from `src` folder into `$HOME/.config/dunst/dunstrc`.
+1. Choose a flavor file from the [themes](themes) directory.
+2. Copy the contents of the file into `$HOME/.config/dunst/dunstrc`.
 
 ## 💝 Thanks to
 
