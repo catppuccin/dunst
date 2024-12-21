@@ -9,6 +9,7 @@ whiskers:
 [global]
 frame_color = "#{{ palette.blue.hex }}"
 separator_color= frame
+highlight = "#{{ palette.blue.hex }}"
 
 [urgency_low]
 background = "#{{ palette.base.hex }}"
