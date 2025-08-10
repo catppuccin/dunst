@@ -36,7 +36,7 @@
 
 ## Usage
 
-1. Choose a flavor file from the [themes](themes) directory.
+1. Choose a flavor and accent combination from the [themes](themes) directory.
 2. Copy the contents of the file into `$HOME/.config/dunst/dunstrc`.
 
 ## 💝 Thanks to

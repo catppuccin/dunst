@@ -1,25 +1,26 @@
 ---
 whiskers:
-  version: 2.0.0
+  version: ^2.5.1
   matrix:
     - flavor
-  filename: "themes/{{ flavor.identifier }}.conf"
+    - accent
+  filename: "themes/{{ flavor.identifier }}/{{ accent }}.conf"
 ---
-{%- set palette = flavor.colors -%}
 [global]
-frame_color = "#{{ palette.blue.hex }}"
+frame_color = "#{{ flavor.colors[accent].hex }}"
 separator_color= frame
-highlight = "#{{ palette.blue.hex }}"
+highlight = "#{{ flavor.colors[accent].hex }}"
 
 [urgency_low]
-background = "#{{ palette.base.hex }}"
-foreground = "#{{ palette.text.hex }}"
+background = "#{{ base.hex }}"
+foreground = "#{{ text.hex }}"
 
 [urgency_normal]
-background = "#{{ palette.base.hex }}"
-foreground = "#{{ palette.text.hex }}"
+background = "#{{ base.hex }}"
+foreground = "#{{ text.hex }}"
 
 [urgency_critical]
-background = "#{{ palette.base.hex }}"
-foreground = "#{{ palette.text.hex }}"
-frame_color = "#{{ palette.peach.hex }}"
+background = "#{{ base.hex }}"
+foreground = "#{{ text.hex }}"
+{# Ensure urgency is still visible even if the accent color is the normal urgent border color -#}
+frame_color = "#{{ if(cond=(accent == "peach"), t=red.hex, f=peach.hex) }}"
